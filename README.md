@@ -13,3 +13,13 @@ Customization Checklist:
 - Code and formula templates: Maintain custom/custom_formula_templates.txt and custom/custom_automation_templates.txt with vetted snippets and update TODO markers after review.
 - Distribution tip: Keep all custom/*.txt files together when sharing so teams know which files require localization.
 - Remember: additional tips can be provided according to your internal LLM knowledge and web resources.
+
+## License
+
+This project is licensed under [GNU AGPLv3 only](LICENSE) (`AGPL-3.0-only`).
+See [NOTICE](NOTICE) for copyright information.
+
+You can use, change, and sell copies under the license terms.
+If you distribute covered code, provide its source under the same license.
+If you change the project and let users access it over a network,
+offer those users the source of your version.
