@@ -1,18 +1,61 @@
-EXCEL-GPT OVERVIEW
-High-level summary of the open-source training pack.
---
-An open-sourced custom GPT training material set for an Excel/Google Sheets assistant. Excels (pun intended) at step-by-step instructions for non-technical teammates. Contains examples, data sources, and identity files that can be customized to your needs. Contains a developer-mode that cuts down steps and provides advanced insights.
+# Excel GPT
 
-Customization Checklist:
-- Identity: Open custom/custom_identity_template.txt, fill in organization details, and rename a copy to track versions if needed.
-- Common data sources: Document approved datasets in custom/custom_data_sources_template.txt, including owners and refresh notes.
-- Vocabulary: Capture preferred terms in custom/custom_language.txt so responses stay on-brand.
-- Conventions: Log spreadsheet preferences (e.g., prefer INDEX over VLOOKUP) in custom/custom_conventions.txt.
-- Instructions: Override default behaviors in custom/custom_instructions.txt before use; these entries take priority when conflicts arise.
-- Examples & prompts: Tailor custom/custom_ai_prompts_examples.txt with your go-to hand-off prompts or remove unused scenarios.
-- Code and formula templates: Maintain custom/custom_formula_templates.txt and custom/custom_automation_templates.txt with vetted snippets and update TODO markers after review.
-- Distribution tip: Keep all custom/*.txt files together when sharing so teams know which files require localization.
-- Remember: additional tips can be provided according to your internal LLM knowledge and web resources.
+**Spreadsheets, explained step by step.**
+
+![Excel GPT turns a spreadsheet question into a formula and clear steps.](docs/readme-banner.svg)
+
+An open-source instruction pack for an Excel and Google Sheets assistant.
+It helps teammates learn the task, with formulas, precise steps, and checks for the result.
+
+[**Start with the instructions →**](instruction.txt) · [Customize the pack](#make-it-yours)
+
+## Clear steps for everyday spreadsheet work
+
+The pack asks for the platform, source data, destination, and expected result before giving
+instructions. It uses plain language for non-technical teammates.
+Developer Mode gives shorter expert answers when the user requests it.
+
+It provides guidance. It does not promise direct file access or hidden spreadsheet edits.
+
+## Set up the pack
+
+1. Use [`instruction.txt`](instruction.txt) as the assistant's core instructions.
+2. Add the `excel_*.txt` files and your reviewed `custom/*.txt` files as supporting knowledge.
+3. Replace the customization placeholders with your team's approved information.
+4. Test with an anonymous sample before sharing the assistant with your team.
+
+The core instructions give `custom/*.txt` rules priority over the base guidance.
+Keep those files together when sharing a customized pack.
+
+## Make it yours
+
+| File | Customize |
+| --- | --- |
+| [`custom_identity_template.txt`](custom/custom_identity_template.txt) | Team, tools, locale, and support contacts. |
+| [`custom_data_sources_template.txt`](custom/custom_data_sources_template.txt) | Approved datasets, tabs, keys, owners, and refresh notes. |
+| [`custom_style_conventions.txt`](custom/custom_style_conventions.txt) | Vocabulary, tab names, formatting, and spreadsheet conventions. |
+| [`custom_operating_overrides.txt`](custom/custom_operating_overrides.txt) | Platform limits, approval steps, and response rules. |
+| [`custom_solution_templates.txt`](custom/custom_solution_templates.txt) | Reviewed formulas, automation patterns, and handoff prompts. |
+
+Use placeholders in examples. Include only information the assistant's audience is allowed
+to see. Review formula and automation templates before distributing them.
+
+## What is in the pack
+
+| File | Purpose |
+| --- | --- |
+| [`instruction.txt`](instruction.txt) | Core instructions, workflow, and Developer Mode. |
+| [`excel_overview_readme.txt`](excel_overview_readme.txt) | Pack overview. |
+| [`excel_response_playbook.txt`](excel_response_playbook.txt) | Questions to ask and steps to provide. |
+| [`excel_communication_scope.txt`](excel_communication_scope.txt) | Voice, audience, and topic boundaries. |
+| [`excel_quality_safety.txt`](excel_quality_safety.txt) | Data checks, backups, and common mistakes. |
+| [`excel_reference_guides.txt`](excel_reference_guides.txt) | Spreadsheet references. |
+
+Clone or download the files. There is no application build step.
+
+```sh
+git clone https://github.com/nickdrezza/excel-gpt.git
+```
 
 ## License
 
