@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" role="img" aria-labelledby="title desc">
+  <title id="title">Excel GPT. Spreadsheets, step by step.</title>
+  <desc id="desc">An instruction pack for Excel and Google Sheets.</desc>
+  <rect width="960" height="300" rx="24" fill="#edf4ef"/>
+  <circle cx="932" cy="8" r="170" fill="#3f8063" opacity="0.06"/>
+  <g font-family="system-ui, sans-serif" fill="#252526">
+    <text x="52" y="105" font-size="44" font-weight="700">Excel GPT</text>
+    <text x="54" y="156" font-size="23">Spreadsheets, step by step.</text>
+    <text x="54" y="218" font-size="15" fill="#5b5a60">An instruction pack for Excel and Google Sheets.</text>
+  </g>
+  <rect x="546" y="82" width="164" height="141" rx="14" fill="#fff"/>
+  <path d="M560 113 H696 M560 145 H696 M560 177 H696 M592 98 V206 M627 98 V206 M661 98 V206" stroke="#d4e4d9" stroke-width="2"/>
+  <rect x="628" y="146" width="32" height="30" fill="#c6decf"/>
+  <rect x="758" y="99" width="145" height="123" rx="14" fill="#3f8063"/>
+  <text x="830" y="144" text-anchor="middle" font-family="monospace" font-size="22" fill="#fff">=SUM(...)</text>
+  <path d="M782 170 H881 M782 185 H861" stroke="#c3e0d0" stroke-width="3" stroke-linecap="round"/>
+</svg>
